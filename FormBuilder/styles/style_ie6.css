@@ -1,0 +1,31 @@
+#content-zone .inner{
+	height:400px;
+}
+#home .container, #blog .container{
+	width:980px;
+}
+#nav .current{
+	background:#333;;	
+}
+#nav .current a {
+	background:#333;;	
+	color:#fff;
+	display:block;
+}
+.ui-tabs-nav li a{
+	float:left;
+	display:block;
+}
+.feature-list li{
+	width:400px;
+}
+button.button{
+	padding-bottom:0px;
+	height:32px;
+}
+.search input{
+	height:24px;
+}
+.download{
+	display:none;
+}

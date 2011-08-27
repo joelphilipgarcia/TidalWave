@@ -1,0 +1,147 @@
+/* -----------------------------------------------------------------------
+
+   BlueTrip CSS Framework
+   
+   Mike Crittenden
+   mike@capsizedesigns.com
+   Copyright 2008 Mike Crittenden
+   
+   License - MIT or GPL (whichever suits you better)
+
+----------------------------------------------------------------------- */
+
+/* MEYER RESET v1.0*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+/* BASIC TYPOGRAPHY */
+
+html { font-size: 62.5%; font-family: "Liberation Sans", Helvetica, Arial, sans-serif; }
+strong, th, thead td, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+cite, em, dfn { font-style: italic; }
+/*code, kbd, samp, pre, tt, var, input[type='text'], input[type='password'], textarea { font-size: 92%; font-family: monaco, "Lucida Console", courier, monospace; }*/
+code, kbd, samp, pre, tt, var{ font-size: 92%; font-family: monaco, "Lucida Console", courier, monospace; }
+del { text-decoration: line-through; color: #666; }
+ins, dfn { border-bottom: 1px solid #ccc; }
+small, sup, sub { font-size: 85%; }
+abbr, acronym { text-transform: uppercase; font-size: 85%; letter-spacing: .1em; }
+a abbr, a acronym { border: none; }
+abbr[title], acronym[title], dfn[title] { cursor: help; border-bottom: 1px solid #ccc; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
+/* QUOTES */
+
+blockquote { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; color: #666; }
+blockquote *:first-child:before { content: "\201C"; }
+blockquote *:first-child:after { content: "\201D"; }
+
+/* FORMS */
+
+fieldset { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend { font-weight: bold; font-size:1.2em; }
+label { font-weight: bold; }
+/*textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; background: #fff; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #888; outline: 2px solid #ffffaa; }*/
+input, select { cursor: pointer; }
+input[type='text'],input[type='password'] { cursor: text; }
+
+/* BASE SIZES don't need this*/
+
+/*
+.container { font-size: 1.2em; line-height: 1.6em; }
+.container h1 { font-size: 1.9em; }
+.container h2 { font-size: 1.7em; }
+.container h3 { font-size: 1.5em; }
+.container h4 { font-size: 1.3em; }
+.container h5 { font-size: 1.2em; }
+.container h6 { font-size: 1em; }
+*/
+
+/* LISTS */
+
+.content ul { list-style-type: none; }
+.content ul ul { list-style-type: square; }
+.content ul ul ul { list-style-type: circle; }
+.content ol { list-style-position: outside; list-style-type: decimal; }
+.content dt { font-weight: bold; }
+
+/* TABLES */
+
+.container table { border-top: 1px solid #ccc;  border-left: 1px solid #ccc; }
+.container th, .container td { border-bottom: 1px solid #ddd; border-right: 1px solid #ccc; }
+
+/* MARGINS & PADDINGS */
+
+.container blockquote *:first-child { margin: .8em 0; }
+.content hr, .content p, .content ul, .content ol, .content dl, .content pre, .content blockquote, .content address, .content table, .content form { margin-bottom: 1.45em; }
+/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 don't need this */
+/*.container h1 { margin: 1em 0 .5em;  }
+.container h2 { margin: 1.07em 0 .535em; }
+.container h3 { margin: 1.14em 0 .57em; }
+.container h4 { margin: 1.23em 0 .615em; }
+.container h5 { margin: 1.33em 0 .67em; }
+.container h6 { margin: 1.6em 0 .8em; }
+*/
+.container th, .container td { padding: .8em; }
+.container caption { padding-bottom: .8em; } /* padding instead of margin for IE */
+.container blockquote { padding: 0 1em; margin: 1.6em 0; }
+.container fieldset { padding: 0 1em 1em 1em; margin: 1.6em 0; } /* padding-top is margin-top for fieldsets in Opera */
+.container legend { padding-left: .8em; padding-right: .8em; }
+.container legend+* { margin-top: 1em; } /* compensates for the opera margin bug */
+.container textarea, .container input { padding: .3em .4em .15em .4em; }
+.container select { padding: .1em .2em 0 .2em; }
+.container option { padding: 0 .4em; }
+.container dt { margin-top: .8em; margin-bottom: .4em; }
+.content ul { margin-left: 1.5em; }
+.content ol { margin-left: 2.35em; }
+.content ol ol, .content ul ol { margin-left: 2.5em; }
+
+/* COLORS */
+
+.container a:link { text-decoration: underline; color: #36c; }
+.container a:visited { text-decoration: underline; color: #99c; }
+.container a:hover { text-decoration: underline; color: #c33; }
+.container a:active, .container a:focus { text-decoration: underline; color: #000; }
+.container code, .container pre { color: #c33; } /* very optional, but still useful. W3C uses about the same colors for codes */
+
+/* 24 COLUMN GRID -- use blueprint grid */
+
+.fancy { 
+  color: #666; 
+  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif; 
+  font-style: italic;
+  font-weight: normal;
+}  
+
+/* creates small caps */
+.caps { 
+  font-variant: small-caps; 
+  letter-spacing: 1px; 
+  text-transform: lowercase; 
+  font-size:1.2em;
+  font-weight:bold;
+  padding:0 2px;
+}
+
+/* TEXT CLASSES */
+
+.container .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.container .large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.container .hide {display:none;}
+.container .quiet {color:#666;}
+.container .loud {color:#000;}
+.container .highlight {background:#ff0;}
+.container .top {margin-top:0;padding-top:0;}
+.container .bottom {margin-bottom:0;padding-bottom:0;}
+.container .thin {font-weight: lighter;}
+.container .error, .container .notice, .container .success {padding:.8em;margin-bottom:1.6em;border:2px solid #ddd;}
+.container .error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+.container .notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+.container .success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.container .error a {color:#8a1f11; background:none; padding:0; margin:0; }
+.container .notice a {color:#514721; background:none; padding:0; margin:0; }
+.container .success a {color:#264409; background:none; padding:0; margin:0; }
+.container .center {text-align: center;}
+
