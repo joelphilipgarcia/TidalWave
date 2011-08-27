@@ -2,7 +2,8 @@ Git Repo for TidalWaveApp.
 
 I'm not sure if everything will go in here, but I'll start with a few things that can be open sourced.
 
-First, a Wufoo type Form builder. I couldn't find one that was worth anything online in Sencha or JQuery so I banged one out in five days using Sencha. Yes, Sencha is heavy, but it gives me quite a bit out of the box.
+First, a Wufoo type Form builder. I couldn't find one that was worth anything online in Sencha or JQuery so I banged one out in five days using Sencha. Yes, Sencha is heavy, but it gives me quite a bit out of the box. 
+	This resides in FormBuilder
 Second, a data model for the latest thing that I'm building.
 Last, just some notes for a friend that I'm helping out. 
 
